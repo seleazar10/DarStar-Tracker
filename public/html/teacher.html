@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Permanent+Marker&display=swap" rel="stylesheet">
+
+
+
+  <!-- font-awesome -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+  <!-- <title>Student Behavior Log</title> -->
+
+  <!-- <title>DarStar Behavior Tracker</title> -->
+
+  <title>Teacher - Record Input</title>
+
+</head>
+
+<body>
+
+
+
+
+  <section>
+
+    <div class="header-teacher">
+
+
+      <nav class="navbar navbaro sticky-top navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+        <a class="navbar-brand" href="index.html">DarStar!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./parent.html">Parent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./teacher.html">Teacher</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0 navSearch">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0 disabled" type="submit">Search</button>
+          </form> -->
+        </div>
+      </nav>
+
+      <div class="container">
+
+        <!-- jumbotron -->
+
+        <div class="jumbotron jumboTwo mt-3">
+          <h1 class="display-4 text text-dark">DarStar!</h1>
+
+          <hr class="my-4">
+          <p>To begin, please enter the student's ID number below:</p>
+
+
+          <!-- student ID input -->
+          <form id="form" action="" method="GET" class="form-inline">
+
+            <div class="form-group mb-2">
+
+              <label for="inputPassword3" class="sr-only">Password</label>
+              <input type="input" class="form-control" id="inputPassword3" placeholder="Student's ID">
+            </div>
+            <button type="submit" class="btn btn-primary teachStuIdBtn mb-2 ml-3">Find Student</button>
+          </form>
+
+          <span class="teacherLogAppend"></span>
+
+
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------- -->
+
+
+        <!-- get info from mySQL database to display name + etc -->
+
+        <!-- --------------------------------------------------------------------------------------- -->
+
+
+        <div class="card teaBeLogTab col-12 mt-3">
+          <!-- student name and ID displayed here -->
+          <h5 class="card-header studentName"></h5>
+          <h5 class="card-header studentId">Student Id: <span class=stuId></span></h5>
+
+
+
+
+          <div class="card-body">
+
+
+            <table class="table bg-white ">
+              <thead class="thead-dark text-center">
+                <tr>
+                  <th scope="col">Category</th>
+                  <th scope="col">Score</th>
+
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <tr>
+                  <th scope="row" class="text-left behTabTitle ">Respect</th>
+                  <td>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio1" value=1>
+                      <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio2" value=2>
+                      <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio3" value=3>
+                      <label class="form-check-label" for="inlineRadio3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio4" value=4>
+                      <label class="form-check-label" for="inlineRadio4">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio5" value=5>
+                      <label class="form-check-label" for="inlineRadio5">5</label>
+                    </div>
+
+
+
+                  </td>
+
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left behTabTitle">Kindness</th>
+                  <td>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value=1>
+                      <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value=2>
+                      <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio3" value=3>
+                      <label class="form-check-label" for="inlineRadio3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio4" value=4>
+                      <label class="form-check-label" for="inlineRadio4">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio5" value=5>
+                      <label class="form-check-label" for="inlineRadio5">5</label>
+                    </div>
+
+
+
+                  </td>
+
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left behTabTitle">On-Task</th>
+                  <td>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1"
+                        value="1">
+                      <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2"
+                        value="2">
+                      <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio3"
+                        value="3">
+                      <label class="form-check-label" for="inlineRadio3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio4"
+                        value="4">
+                      <label class="form-check-label" for="inlineRadio4">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio5"
+                        value="5">
+                      <label class="form-check-label" for="inlineRadio5">5</label>
+                    </div>
+
+
+
+                  </td>
+
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left behTabTitle">Listening Skills</th>
+                  <td>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1"
+                        value="1">
+                      <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2"
+                        value="2">
+                      <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio3"
+                        value="3">
+                      <label class="form-check-label" for="inlineRadio3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio4"
+                        value="4">
+                      <label class="form-check-label" for="inlineRadio4">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio5"
+                        value="5">
+                      <label class="form-check-label" for="inlineRadio5">5</label>
+                    </div>
+
+
+
+                  </td>
+
+                </tr>
+
+                <tr></tr>
+                <th scope="row" class="text-left behTabTitle"></th>
+                <td></td>
+
+
+              </tbody>
+            </table>
+
+            <div class="row">
+              <div class="col-12 ml-0">
+
+                <div class="col-lg-12 col-sm-1">
+
+
+                  <form id="teaComBox" action="" method="POST" class="form-inline ">
+
+                    <div class="form-group">
+
+                      <!-- <label for="teachComment" class="sr-only">Comment:</label> -->
+                      <p class="markerFont mr-3">Teacher's Comment: </p>
+
+                      <textarea name="commentBox" id="teachComment" cols="60" class="d-block"
+                        placeholder="Leave a comment here..."></textarea>
+
+                      <!-- <input type="text" class="d-block mb-3 p -5" id="teachComment"  placeholder="Leave a comment here..."> -->
+
+                    </div>
+
+                  </form>
+
+
+                </div>
+
+
+
+
+              </div>
+            </div>
+
+
+
+
+            <hr>
+
+
+            <form>
+
+              <fieldset class="form-group mt-4" id="formWork">
+                <div class="row">
+                  <legend class="col-form-label col-8 pt-0"><i class="fa fa-star"></i>Is the student missing any work?
+                  </legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="No"
+                        checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        No
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Yes">
+                      <label class="form-check-label" for="gridRadios2">
+                        Yes
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+              </fieldset>
+
+
+            </form>
+
+
+
+
+            <div class="col-lg-5 col-sm-12 mb-4">
+
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text text-light bg-dark" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01"
+                    aria-describedby="inputGroupFileAddon01">
+                  <label class="custom-file-label text-primary" for="inputGroupFile01">Choose file</label>
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+
+            <hr>
+
+
+            <span class="textCheckForm text-danger col-12"></span>
+
+            <div class="mt-2">
+
+              <div class="col-lg-6 col-sm-12">
+                <form id="idBox" action="" method="POST" class="form-inline ">
+                  <div class="form-group mb-2">
+                    <label for="idteachComment" class="sr-only">Comment:</label>
+                    <span class="mr-1"><i class="fa fa-star"></i>To submit, confirm student's</span>
+                    <textarea name="commentBox" id="idteachComment" cols="5" rows="1" placeholder="ID..."></textarea>
+                    <!-- <input type="text" class="d-block mb-3 p -5" id="teachComment"  placeholder="Leave a comment here..."> -->
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-lg-5">
+                <button type="button" class="btn btn-primary teachBehavLog">Submit</button>
+              </div>
+
+            </div>
+
+
+
+
+
+
+            <hr>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+      <div class="container">
+
+        <div class="card teaBeLogTab mt-2 mb-5">
+
+
+          <h5 class="card-header"> Announcements <i class="fa fa-scroll fa-1x"></i></h5>
+          <div class="card-body ">
+            <p>Hispanic Heritage Month program information will be sent out on Monday!</p>
+          </div>
+        </div>
+
+        <div class="adminPage">
+            <i class="fa fa-user fa-4x" aria-hidden="true"></i>
+      
+      
+          </div>
+
+
+      </div>
+
+     
+
+
+
+    </div>
+
+
+
+
+
+    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste officia quaerat commodi vel dolore culpa at, ex iure ipsam a, accusantium provident dolorum impedit. Ut officiis nemo vel vero consequuntur.</p> -->
+
+    
+
+
+  </section>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+  <script src="../js/index.js"></script>
+
+  <script src="../js/teacher.js"></script>
+
+
+
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>

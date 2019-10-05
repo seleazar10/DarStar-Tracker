@@ -1,0 +1,21 @@
+{
+  "development": {
+    "username": "ugwm1lhgdahm7j0t",
+    "password": "gd7dycu265umn012",
+    "database": "rsg919mcacujkms2",
+    "host": "axxb6a0z2kydkco3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "darstardb",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}

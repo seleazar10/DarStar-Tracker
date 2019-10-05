@@ -1,0 +1,296 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+html{
+  background-color: #fff;
+  color: #000;
+  font-family: "lato", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+
+
+  /* scrolling */
+  /* overflow: hidden;
+  height: 100%; */
+
+
+  
+}
+
+/* body {
+  height: 100%;
+  overflow: auto;
+} */
+
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.562)), url('../images/teacher.png');
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.header-parent{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.562)), url('../images/student.png');
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  overflow: overlay;
+
+
+}
+
+.header-teacher{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.562)), url('../images/bookpencils.png');
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  overflow: overlay;
+
+}
+
+/* .navbaro{
+  position: fixed;
+    width: 100%;
+    top: 0;
+} */
+
+
+
+
+ 
+
+
+/*-------------------------------Middle text------------------*/
+
+
+
+.maintext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+
+.text{
+
+  font-size: 80px;
+  font-family: 'Permanent Marker', cursive;
+  font-weight:500;
+  color: #fff;
+  font-size: 52px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+
+}
+
+.textCheckForm{
+
+  font-size: 25px;
+  /* font-family: 'Permanent Marker', cursive; */
+  font-weight:300; 
+ 
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+
+
+}
+
+
+
+.markerFont{
+
+  font-family: 'Permanent Marker', cursive;
+
+}
+
+.dancingScriptFont{
+
+  font-family: 'Dancing Script', cursive;
+
+}
+  
+
+  
+
+  
+
+
+/* BUTTONS */
+
+.btnHome:link,
+.btnHome:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-style:solid;
+    border-color: #e67e22;
+     border-radius: 200px;
+     transition: background-color 0.2s, border 0.2s, color 0.2s;
+       
+}
+
+
+.btnParent:link,
+.btnParent:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 20px;
+    padding: 50x;
+}
+
+.btnTeacher:link,
+.btnTeacher:visited {
+    color: #fff;
+    border: 1px solid #39d27a;
+    background-color: #39d27a
+}
+
+/* .btn:hover,
+.btn:active{
+    background-color: transparent;
+    color: #fff;
+    
+} */
+/* 
+
+
+.pico{
+  width: 10px
+}
+
+.teaBeLogTab{
+  margin-left: 50%;
+  margin-right: 50%;
+} */
+
+.behTabTitle{
+  font-size: 25px;
+}
+
+.behavColor{
+  /* background-color: blue; */
+}
+
+.teachPic{
+  width: 140px; 
+  border-radius: 50%;
+  margin: auto;
+}
+
+.contactFontLink{
+  color: white;
+  float: right;
+}
+
+.parCalend{
+  width: 1000px;
+  margin: auto;
+  overflow: hidden;
+
+   
+}
+
+.cardColor{
+  background-color: rgb(233,236,239)
+}
+
+
+.powerschoolImg{
+
+  max-width: 200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.attenTab{
+  overflow: hidden;
+
+}
+
+.localNewsBtn {
+
+ 
+  background-color: rgb(254,194,66);
+  color: rgb(254,194,66);
+}
+
+.caruno{
+  background-color: rgb(254,194,66);
+}
+
+.adminPage{
+
+  float: right;
+  color: white;
+}
+
+
+/* 
+over tooltip */
+
+.jumbo {
+  background-image: url("../images/whiteboard.png");
+  background-size: cover;
+  background-position: center;
+
+}
+.jumboTwo {
+  background-image: url("../images/pen.png");
+  background-size: cover;
+  background-position: center;
+
+}
+.jumboThree {
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.432)), url("../images/pencil.png");
+  background-size: cover;
+  /* height: 100vh; */
+  background-position: center;
+  color: white;
+  
+}
+
+.colDesBtn{
+  padding: 10px 30px;
+}
+
+.bg-orange{
+  background-color: #b77d01;
+}
+
+.orang{
+
+  background-color: #b77d01;
+  
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  height: 600px;
+
+
+  
+  
+} 
