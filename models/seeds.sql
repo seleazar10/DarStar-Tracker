@@ -11,17 +11,17 @@ CREATE TABLE Classrooms(
     pillar4 INTEGER NULL,
     color VARCHAR(100) NULL,
     missingwork VARCHAR(100) NULL,
-    date DATETIME NULL,
+    -- date DATETIME NULL,
     descriptioncomments VARCHAR(255) NULL,
-    createdAt DATETIME NULL,
-    updatedAt DATETIME NULL,
+    -- createdAt DATETIME NULL,
+    -- updatedAt DATETIME NULL,
 	PRIMARY KEY(id)
 )
 
 
-Create TABLE adminInfo(
-    id int NOT NULL AUTO_INCREMENT,
-    anncmtDate varchar(45),
-    schoolAnnouncemnt varchar(1000) NOT NULL,
-    PRIMARY KEY(id)
-)
+-- Create TABLE adminInfo(
+--     id int NOT NULL AUTO_INCREMENT,
+--     anncmtDate varchar(45),
+--     schoolAnnouncemnt varchar(1000) NOT NULL,
+--     PRIMARY KEY(id)
+-- )
